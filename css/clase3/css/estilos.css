@@ -1,0 +1,27 @@
+body {
+/*medidas absolutas(px pero las siguientes nadies usa cm,mm,in), valor fijo, medidas relativas(rem,em), flexibles*/
+/*tambien hay % pero es para las cajas*/
+    font-size:16px;
+
+}
+
+div{
+
+    font-size:20px;
+    background:#000;/*fondo negro*/
+    color:#fff;
+    width:50%;/**diseño responsive, diseño adaptable*/
+
+}
+
+div p{
+    font-size:1rem;/*em = representa el valor del elemento padre en su tamano fuente
+    (resumiendo: toma la fuente del padre mas cercano, arriba esta div con 20 y body con 16 asi que
+    tomara la fuente mas cercana que es div)
+    ()
+    ejemplo 1(20px), si no cambias el font size del body se quedara con el tamaño por defecto*/
+
+}
+
+
+

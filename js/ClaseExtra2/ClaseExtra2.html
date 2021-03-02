@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <!--Instanciando CSS-->
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <!--Con google Font = https://fonts.google.com/ buscar el Oswald-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
+        <title>Reloj Digital de 12 horas - JS</title><!--Listas D:-->
+
+    </head>
+    <body>
+        <!--wrap para centrar el reloj-->
+        <div class="wrap">
+
+            <!--widget para el conjunto de la fecha y hora-->
+            <div class="widget">
+                <div class="fecha">
+                    <p id="diaSemana" class="diaSemana"></p> <!--para dia de la semana lunes a domingo-->
+                    <p id="dia" class="dia"></p>             <!--para dia 1 al 31-->
+                    <p>de </p>
+                    <p id="mes" class="mes"></p>             <!--para el mes del 0 a 11-->
+                    <p>del </p>
+                    <p id="year" class="year"></p>             <!--para el año-->
+
+                </div>
+                <div class="reloj">
+                    <p id="horas" class="horas"></p>        <!--para horas-->
+                    <p>:</p>
+                    <p id="minutos" class="minutos"></p>    <!--para minutos-->
+                    <p>:</p>
+                    <div class="caja-segundos">              <!--caja de am y pm y los segundos-->
+                        <p id="ampm" class="ampm"></p>             <!--para am y pm-->
+                        <p id="segundos" class="segundos"></p>     <!--para segundos-->
+    
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <!--enlazando el archivo javascript-->
+        <script src="js/main.js"></script>
+    </body>
+
+    </html>

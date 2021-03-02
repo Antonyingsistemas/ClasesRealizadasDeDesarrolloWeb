@@ -1,0 +1,60 @@
+/*formulario*/
+
+form{
+    width:25%;              /*tamaño*/
+    border: 1px solid #ccc;/*borde*/
+    /*margenes*/
+    margin:20px;
+    padding:20px;
+}
+
+label{
+    font-size:12px;/*tamaño de las letras*/
+    display:block;/*pasar a a block o a un bloque para que funcione*/
+    width:100%;/*abarca todo el espacio*/
+}
+
+textarea{
+    resize:vertical;/*both(ambos lados), horizontal a la derecha, vertical a abajo, permite si se va a cambiar el tamaño o no*/
+    max-height:200px;/*altura maxima*/
+    min-height:100px;
+    
+}
+
+input, textarea { /*aplica al input y al textarea*/
+    margin-bottom:20px;/*marge hacia abajo*/
+    width:100%;
+    padding:10px;
+    /*cambia e modelo de caja, para que no se salga del formulario por que no cuenta el padding*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+
+    border: 1px  solid #ccc;
+}
+
+input:focus , textarea:focus{/*seudoselector cuando este seleccionando un input*/
+
+    border: 1px solid #1668c4;
+
+}
+
+input[type="submit"]{/*todos los input con type=submit */
+
+    margin-bottom:0px;  /*elemina el espacio*/
+    background:#1668C4;/*fondo*/
+    color:#fff;/*color fuente*/
+    border:none;/*quitamos el borde*/
+}
+
+
+input[type="submit"]:hover{/*todos los input con type=submit */
+
+    background:#4a88f4;/*fondo*/
+    cursor:pointer;/*cambia el puntero*/
+
+}
+
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Timers, TImeout e interval</title>
+      
+    </head>
+    <body>
+
+        <script>
+
+        //funcion autoinvocada
+        (function(){
+            var contador=1;
+            
+            //Timeout solo una vez
+            var saludo = function(){
+                console.log(contador);
+                contador++;
+
+                //solo queremos 
+                //if(contador === 6){
+                //    clearInterval(intervalo);  //podemos limpiar el intervalo o deterner 
+                //}
+
+                setTimeout(saludo, 1000);
+            };
+            //setTimeout(saludo, 1000);//3000 muestra en 3 segundo y se ejecuta una vez
+
+
+            //Interval cada vez
+            //var intervalo = setInterval(saludo, 1000);//3000 muestra en 3 segundo y se ejecuta cada vez
+
+            saludo();
+
+        }())
+        
+        </script>
+
+        <!--<script src="javascript/jasc.js" >
+        
+        
+        </script>-->
+        <!--recomendado poner el SCRIPT AL FINAL!!!-->
+    </body>
+</html>

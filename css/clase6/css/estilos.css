@@ -1,0 +1,24 @@
+/*FONDOS*/
+body{
+    background:url(../imagen/axpeerd.jpg);/*regresa una carpeta con ../ y busca la imagen */
+    background-repeat:no-repeat;/*para que no se repita
+    background-repeat:repeat-x; para que se repita en horizontal
+    background-repeat:repeat-y; para que se repita en vertical
+    */
+
+    /*para que la imagen se arregle o no baja la imagen*/
+    background-attachment:fixed;/*scroll es para que sube y baje*/
+
+    color:#fff;
+
+    /*posicionar el fondo*/
+    background-position:center 100px;/*50% a la derecha y 0 de arriba y abajo*/
+}
+
+div{
+    background:url(../imagen/axpeerd.jpg);
+    background-repeat:no-repeat;
+    height:300px;
+    color:#fff;
+
+}

@@ -1,0 +1,26 @@
+/*SASS inicio*/
+/*estilos.scss*/
+/*SCSS -Syntax (mas antigua)*/
+body {
+    background:#000000;     /*#000000 o poner black PARA EL FONDO*/
+
+}
+
+.caja {
+    h1 {
+        color:blue;
+    }
+}
+/*-----*/
+
+/*SASS - Syntax (mas actual)*/
+/*estilos.sass*/
+
+body 
+    background:#000000;     /*#000000 o poner black PARA EL FONDO*/
+
+.caja 
+    h1
+        color:blue;
+        
+    

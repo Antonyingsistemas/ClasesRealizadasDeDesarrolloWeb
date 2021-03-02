@@ -1,0 +1,83 @@
+$naranja: #0079D9
+$color-primario: #0074D9
+
+
+// Cool
+$navy: #001F3F
+$blue: #0074D9
+$aqua: #7FDBFF
+$teal: #39CCCC
+$olive: #3D9970
+$green: #2ECC40
+$lime: #01FF70
+
+// Warm
+$yellow: #FFDC00
+$orange: #FF851B
+$red: #FF4136
+$fuchsia: #F012BE
+$purple: #B10DC9
+$maroon: #85144B
+
+// Grayscale
+$white: #FFFFFF
+$silver: #DDDDDD
+$gray: #AAAAAA
+$black: #111111
+
+//letras
+$font-family: Arial, Sans-serif
+$font-size: 16px
+
+*
+    margin: 0
+    padding: 0
+
+body 
+    background: #001F3F
+    color: #111
+
+a 
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+
+
+.contenedor 
+    width: 90%
+    max-width: 900px
+    margin: 2em auto
+
+header 
+    margin-bottom: 1.5em
+    nav 
+        //estilos del nav
+        a 
+            //estilos del a deben estar correctamente identado (anidacion dentro de otro)
+            padding: 1em
+            color: #fff
+            text-decoration: none
+            background: $color-primario
+            display: inline-block
+            margin-right: 1em
+            border-radius: 5px
+            //y que tenga estado hover
+            &:hover
+                //estilos
+                text-decoration: none
+                background: #FF851B
+.main
+    //estilos del main
+    article
+        //estilos del article
+        padding: 1.5em
+        background: $color-primario
+        margin-bottom: 1.5em
+        box-shadow: 5px 5px 2px #000
+        h2 
+            //estilos del
+            color: $color-primario
+    
+
+
+

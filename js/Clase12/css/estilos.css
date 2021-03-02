@@ -1,0 +1,10 @@
+/*referencia a todo el documento= body*/
+/*background queremos cambiar el fondo : valor a que valor hay que cambiar a la propiedad*/
+body {
+    background:#000000;     /*#000000 o poner black PARA EL FONDO*/
+    color:#fff;             /*color de la fuente DEL TEXTO*/
+}
+
+
+
+

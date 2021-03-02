@@ -1,0 +1,41 @@
+/*textos*/
+
+h1{
+    font-weight: normal;/*para sacar la negrita*/
+    text-align:center;
+    background: #ccc;
+}
+
+
+p{
+    color:rgba(0,0,0,.5);
+    font-family:Arial, Helvetica, Sans-serif, "Verdana", "Myriad Pro";/*TIPOGRAFIA cambiar el tipo de letra , poner varias fuentes en caso de que no halla una en el navegador*/
+
+    font-size:20px;/*tamaño*/
+
+    font-weight:normal;/*anchura de la letra , bold = ES NEGRITA*/
+
+    /*alinear textos*/
+    text-align:left;/*centrar textos, left acomodar a izquierda, right acomoda derecha*/
+
+    /*anchura o interliniado*/
+    line-height:30px;
+
+    /*decorado al texto*/
+    text-decoration:none;/*underline subraya el texto, line-through para tachar el texto*/
+
+
+    text-transform:capitalize;/*establecer mayuscula las iniciales de las letras, uppercase TODAS A MAYUSCULAS
+    lowercase TODAS MINUSCULAS*/
+
+    letter-spacing: normal;/*espaciado entre las letras como 20px*/
+
+    word-spacing: 20px;/*espaciado entre cada palabra*/
+
+    /**/
+    text-shadow:1px 1px 0px #000;/*sobra de texto, 5px de izquierda a derecha, 5px vertical, 5px tamaño, color negro */
+}
+
+a{
+    text-decoration:none;/*none para quitar subrayado el texto*/
+}

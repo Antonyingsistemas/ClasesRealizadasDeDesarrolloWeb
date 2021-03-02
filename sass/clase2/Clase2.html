@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>variables con sass</title>
+        <!--Importando CSS -->
+        <link rel="stylesheet" type="text/css"href="sass/main.css">
+
+
+        <!--ESTE ES EL COMENTARIO DE MAIN.SASS LO PONGO AQUI POR QUE AL CAMBIAR NO RECONOCE BIEN EL CAMBIO
+        /*main.sass junta los archivos .css en una sola*/
+        /*C:\Users\Antony\Desktop\SITIO WEB\PrimerSitioWeb\sass\clase2\sass>sass main.sass:main.css*/
+            /*tendremos el .sass-cache y main.css*/
+        
+        
+        /*IMPORTANTE PARA CAMBIAR DE SASS A CSS PRIMERO DEBES ENTRAR
+            AL RUBY Y UBICAR LA CARPETA PARA PONER LOS SIGUIENTE
+                C:"ubica tu archivo"\sass>sass main.sass:main.css   
+                    pero si te SALE:
+                        This selector doesn't have any properties and will not be rendered.
+                            es que boby le falta un espacio o hay un punto y coma
+                                body" "( " " aqui agrega un espacio)
+                                        color:" "#ff851b( " " aqui agrega un espacio)
+
+                                        $naranja: #0079D9 es la variable para ya no repetir el  #0079D9 cada rato
+                                    */-->
+
+
+    </head>
+    <body>
+
+       <header>
+            <!--creando imagen-->
+            <div>
+                <img src="imagen/axpeerd.jpg" width="70" alt="Logotipo de AxpeerD">
+            </div>
+
+            <!--menu de navegacion =nav -->
+            <nav>
+                <!--lista = ul-->
+                <ul>
+                    <!--elementos para cada elemento= li y dentro esta el enlace-->
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Categoria</a></li>
+                    <li><a href="#">Categoria2</a></li>
+
+                </ul>
+            </nav>
+
+       </header>
+
+        <!--encerrando contenido primario y secundario = section y wrapper es contenedor-->
+       <section class="wrapper">
+
+            <!--otro section pero con clase main donde identifica contenido principal-->
+            <section class="main">
+
+                <!--agrega articulos = article (google le da importancia)-->
+                <article>
+                    <h2>Titulo de nuestra pagina</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Officiis voluptatum corporis, quis facere ut fuga quod 
+                        dolorem perferendis, quasi totam dolore! Praesentium mollitia
+                        quibusdam cum necessitatibus dicta animi suscipit veritatis?
+                    </p>
+                </article>
+
+                <article>
+                    <h2>Titulo de nuestra pagina</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Officiis voluptatum corporis, quis facere ut fuga quod 
+                        dolorem perferendis, quasi totam dolore! Praesentium mollitia
+                        quibusdam cum necessitatibus dicta animi suscipit veritatis?
+                    </p>
+                </article>             
+            </section>
+
+            <!--aside es fuera o contenido no muy importante (contenido secundario)-->
+            <aside>
+                <h3>Sidebar ( contenido secundario donde va imagenes, publicidad, etc)</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Officiis voluptatum corporis, quis facere ut fuga quod 
+                    dolorem perferendis, quasi totam dolore! Praesentium mollitia
+                    quibusdam cum necessitatibus dicta animi suscipit veritatis?
+                </p>
+            </aside>
+       </section>
+
+        <!--Pie de pagina-->
+       <footer>
+        <p>Antony Rosales - AxpeerD 2021 new path</p>
+       </footer>
+
+        <!--Diccionario de lineas-->
+       <!--
+        section = se usa en cualquier seccion de la pagina donde se copea y pega
+        article = es el articulo donde va contenido importante para el lector
+        aside = para especificar que ira contenido secundario
+        footer = para pie de pagina
+        div = agregar contenido por que ya no tienen valor importante al navegador
+        header = es el encabezado
+        nav = donde va el menu
+        -->
+       
+    </body>
+</html>

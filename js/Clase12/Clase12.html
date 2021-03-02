@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Metodos para cadenas de texto</title><!--Contenedor de un valor-->
+        
+    </head>
+    <body>
+
+        <script>
+
+            var texto = "Antony AxpeerD";
+            var texto2 = texto.indexOf("A") + 1;
+            var nuevoTexto = texto.length;//.LENGHT cuantos caracteres tiene la cadena de texto
+            var nuevoTexto2 = texto.substring(7);//.SUBSTRING() para cortar la cadena de texto
+            var nuevoTexto3 = texto.substr(0 , 6);//.SUBSTR() separar dos caracteres dependiendo de la cadenada de texto, ejemplo del 0 al 6 (Antony)
+            var nuevoTexto4 = texto.indexOf("A");//.INDEXOF devuelve en que posicion se encuentra la letra "A" , recueda si es a buscara a pero si es A buscara la A pero mayuscula
+            var nuevoTexto5 = texto.indexOf("A", texto2);//vas a buscar la A pero a partir de la a que sigue (mejor dicho ya encontre la A en 0 pero no quiero esa, buscame la siguiente y muestrame el valor)
+            var nuevoTexto6 = texto.lastIndexOf("A");//busca desde atras hacia adelante
+            var nuevoTexto7 = texto.replace("Antony", "Antony sigue aprendiendo");//.REPLACE reemplaza el texto por algo mas , puede ser todo el texto o una parte del texto
+            var nuevoTexto8 = texto.toUpperCase();//pasa a mayusculas
+            var nuevoTexto9 = texto.toLowerCase();//pasa a minusculas
+
+
+
+            //document.write(texto2);//comprobando el nuevotexto5
+            document.write(nuevoTexto9);//solo cambia el numero para ver el ejemplo
+
+        </script>  
+
+
+
+        <!--<script src="javascript/jasc.js" >
+        
+        
+        </script>-->
+        <!--recomendado poner el SCRIPT AL FINAL!!!-->
+    </body>
+</html>

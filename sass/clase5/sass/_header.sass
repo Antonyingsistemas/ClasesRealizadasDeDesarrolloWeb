@@ -1,0 +1,23 @@
+//header
+
+header 
+    margin-bottom: 1.5em
+    nav 
+        //estilos del nav
+        a 
+            //estilos del a deben estar correctamente identado (anidacion dentro de otro)
+            padding: 1em
+            color: #fff
+            text-decoration: none
+            background: rgba($color-primario, .5) //cuanto queremos de opacidad
+            display: inline-block
+            margin-right: 1em
+
+            //usando mixins
+            +border-radius(5px)
+
+
+            &:hover
+                //estilos
+                text-decoration: none
+                background: #FF851B

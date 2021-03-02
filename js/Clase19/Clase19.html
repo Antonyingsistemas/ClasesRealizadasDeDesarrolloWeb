@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Practica</title>
+
+
+
+        <!--Estilo CSS-->
+        <style>
+            /*baja el tamaño de la imagen*/
+            .thumb{
+                width: 200px;
+                transition: 300ms all ease;/*300ms + o -0.3segundos trasicion parala visualizacion sea mas relajado*/
+
+            }
+            
+            /*agranda la imagen*/
+            .grande {
+                width: 400px;
+            }
+
+            /*poner borde*/
+            .titulo{
+                border: 1px solid navy;
+                background: #ccc;
+                padding: 10px;
+            }
+
+            /*titulo mas grande*/
+            .tituloGrande{
+                font-size: 60px;
+            }
+
+        </style>
+        
+    </head>
+    <body>
+        <!--FORMULARIO-->
+        <form action=""> 
+            <!--BOTON DONDE AL CLICKIARLO SE EJECUTARA UNA FUNCION-->
+            <input type="button" value="Cambio de Tamaño" onclick="zoom()"><!--En onclick que ejecute zoom-->
+        </form>
+
+
+        <!--IMAGEN-->
+        <img id="thumI" class="trumb" src="http://lorempixel.com/300/300/" witdh="400" alt="">
+
+        <script>
+            //LA PRACTICA CONSISTE EN PONER UN CLICK EN UN BOTON Y LA IMAGEN SE HAGA PEQUEÑA A GRANDE Y VISEVERSA
+        var zoom = function(){
+            //EJECUTARA EL CAMBIO DEL TAMAÑO
+            var thumb = document.getElementById("thumI");//Cambie la thumb por thumI , se confunde las clases y la id
+            //alert("s");//verifica si va bien
+            //thumb.setAttribute("class","thumb grande");//TAMAÑO MAS GRANDE poniendo en la clase thumb Grande
+            //thumb.className = "thumb grande";//TAMAÑO MAS GRANDE DE OTRA MANERA
+            //thumb.className = "thumb grande";//TAMAÑO MAS GRANDE DE OTRA MANERA
+
+            if(thumb.className =="thumb"){
+                thumb.className = "thumb grande";
+            }
+            else{
+                thumb.className = "thumb";
+            }
+
+        }
+        
+        
+        </script>
+
+        <!--<script src="javascript/jasc.js" >
+        
+        
+        </script>-->
+        <!--recomendado poner el SCRIPT AL FINAL!!!-->
+    </body>
+</html>

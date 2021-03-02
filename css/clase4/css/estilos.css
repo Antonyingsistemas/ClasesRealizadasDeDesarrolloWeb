@@ -1,0 +1,8 @@
+
+/*Agregando Colores*/
+h1{
+    color:rgba(77, 156, 68, 1);/*color verde rgb(53,131,44),  #4D9B44 ,hsl(114, 39%, 44%) */
+    /**rgba para tramparencia rgba(77, 156, 68, .5); esto es para quitarle a la mitad/
+}
+
+

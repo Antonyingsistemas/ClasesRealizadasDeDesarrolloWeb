@@ -1,0 +1,53 @@
+/*Enlaces*/
+
+a{
+    /*Cambiar enlaces a botones*/
+    font-size:20px;
+    color:#000;
+    text-decoration: none;
+    margin:10px 10px 10px 10px; /*cada valor representa un lado arriba derecha abajo izquierda*/
+    padding: 10px 20px;
+    background:#3BA7E1;
+    color:#fff;
+    padding: 10px 20px;
+    display:inline-block;/*pasar de linea a block(bloque)*/
+    box-shadow:0px 5px 0px #04238a;/*0px horizontal 5px abajo 0px tamaño #000 color negro*/
+
+
+    /*seudoclases, darle estilos dependiendo del estado
+    por defecto
+    visitado y no visitado
+    hover cuando pasemos el mouse y
+    cuando hacemos un click en un enlace*/
+}
+
+/*que color va a tener un enlace que nunca se visito, no se usa*/
+a:link{
+    color:#eb2b12;
+    font-size:20px;
+
+}
+
+/*LA QUE MAS SE UTILIZA, que cosa tiene que tener de efecto cuando pases el mouse*/
+a:hover{
+    text-decoration:underline; /*decorado*/
+    /*font-size:30px;*//*no se recomienda por que al cambiar se ve feo*/
+    /*background:#000;*/
+    color:#fff;
+    box-shadow:0px 4px 0px #04238a;/*0px horizontal 4px abajo 0px tamaño #000 color negro*/
+
+}
+
+/*que pasa cuando el usuario le de click*/
+a:active{
+    box-shadow:none;
+    background:#04238a;
+}
+
+/*como se veran los enlaces ya visitados*/
+/*a:visited{
+    color:#000;
+}*/
+
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Eventos</title>
+      
+    </head>
+    <body>
+        <!--<button id="boton">Boton</button>-->
+        <a id= "boton" href="https://www.google.com/" >Google</a>
+        <input type="text" id="input">
+
+        <script>
+
+        //funcion autoinvocada
+        (function(){
+
+            //3 modelos: modelo standar, modelo basico, modelo explore
+            
+            var saludo = function(e){/*e es parametro*/
+                //alert('Saludo');
+                console.log('yeah');//e.type accede al evento que se ejecuta, e.target tambien
+                e.preventDefault();//previene que nos envie a la pagina de google
+            };
+            
+            /*var saludo2 = function(){
+                console.log('El segundo saludo');
+            };*/
+
+            var input = document.getElementById('input');
+            
+            var boton = document.getElementById('boton');
+
+            //agregando evento
+            boton.addEventListener("click", saludo);//cuando el usuario de un "click" ejcutara una funcion
+            //boton.addEventListener("click", saludo2);//cuando el usuario de un "click" ejcutara una funcion
+            
+            
+            //"focus" cuando entramos en un input, "blur" ejecuta cuando salimos del formulario, "charge" si hacemos un cambio en el imput se ejecuta PARA COMPROBAR USUARIOS :D
+
+            //remover evento
+            //boton.removeEventListener("click", saludo2);
+            
+            //boton.addEventListener("click", saludo2);//cuando el usuario de un "click" ejcutara una funcion
+
+            //LISTA DE EVENTOS HTML DOM https://www.w3schools.com/jsref/dom_obj_event.asp
+
+            //OTRA MANERA DE AGREGAR EVENTO DE SALUDAR O FUNCIONO
+            //boton.addEventListener("click", function(){
+            //    console.log('Funciono! :D');
+
+            //});//cuando el usuario de un "click" ejcutara una funcion
+
+
+        }())
+        
+        </script>
+
+        <!--<script src="javascript/jasc.js" >
+        
+        
+        </script>-->
+        <!--recomendado poner el SCRIPT AL FINAL!!!-->
+    </body>
+</html>

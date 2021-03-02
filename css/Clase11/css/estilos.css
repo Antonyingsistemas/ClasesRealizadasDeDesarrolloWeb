@@ -1,0 +1,47 @@
+/*listas*/
+
+
+ul > ul{ /*si ponemos ul > ul cambiara las segundas a adelante*/
+    list-style-type:square;/*list-style-type: que tipo de lista queremos, disc es por defecto, circle circulos, square cuadrados*/
+    list-style-position: inside;/*inside deja un espaciado, outside quita el espaciado*/
+
+}
+
+ol{
+    list-style-type:lower-latin;/*decima por defecto, decimal-leading-zero agrega un cero 01 02,upper-latin letras en mayusculas, lower-latin letras en minusculas, */
+}
+
+/*menu de navegacion*/
+.menu{
+    width:100%;
+    background:#000;
+    list-style:none;/*quita letras o numeros de las listas*/
+    
+    /*quitar espaciado*/
+    margin:0;
+    padding:0;
+
+
+}
+
+/*modificar los elementos li dentro de menu*/
+.menu li{
+    display: inline-block;/*pone uno a lado del otro*/
+
+
+}
+
+/*todos los elemento dento de li y en a*/
+.menu li a{
+    padding:10px 20px;
+    display:inline-block;/*pasar de linea a bloque*/
+    color:#fff;
+}
+
+/*recuerda: hover es para cambiar cuando se pase el mouse*/
+.menu li a:hover{
+    background:#ccc;
+    color:#000;
+
+}
+

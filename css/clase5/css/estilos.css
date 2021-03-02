@@ -1,0 +1,26 @@
+
+/*Modelo de CAJA*/
+
+/*hay elemento de tipo bloque(esta al 100%)y linea(en enlaces y no abarcan todo solo lo que necesita)*/
+
+div {
+    width:300px;                  /*para el ancho*/
+    /*height:200px;   */            /*para la altura*/
+    background:#ff8000;       /*color de fondo*/
+
+    /*margenes y rellenos*/
+
+    /*margen interior*/
+    margin:20px 50px;/*margin:20px;para margen en todos lados, abajo arriba derecha e izquierda
+    margin:20px 50px, la primera medida para arriba y abajo y el 50px para los costados*/
+    
+    /*margen interior*/
+    padding:20px;
+    /*igual al margin con respecto a 20px; y 20px 30px;*/
+
+    /*borde */
+    border:10px solid #000;/*solid es para solido. dotted linea de puntos*/
+
+    /*para poner en linea las cajas*/
+    display:inline-block; /*para poner en linea*/
+}

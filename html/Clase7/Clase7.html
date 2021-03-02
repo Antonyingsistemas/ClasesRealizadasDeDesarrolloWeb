@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <!--formularios donde el usuario interactua donde puede 
+            tener varios atributos para enviar-->
+
+            <!--action = recibe un valor de una url que se encarga
+            de un formulario y procesa toda la inforacion-->
+
+
+            <!--method="" en las siguientes lineas se explica-->
+
+            <!--Explicacion Formal-->
+            <!--GET = donde los datos que se envían al servidor se 
+                escriben en la misma dirección URL-->
+            <!--POST =  introduce los parámetros en la solicitud 
+                HTTP para el servidor-->
+
+
+            <!--Explicacion Simple-->
+            <!--GET sacar recursos del backend, servidor o api 
+            ejemplo: escribimos url y lo cargamos-->
+            <!--POST para guardar informacion en formulario-->
+            <!--PUT para actualizar-->
+            <!--DELETE para borrar-->
+
+            <!--Envias los datos-->
+        <!--<form action="datos.php" method="POST">-->
+
+
+        <form>
+
+            <!--input entrada y recibe atributo type-->
+
+
+            <!--type="text" caja de texto, value="Escribe tu nombre"
+                 es para poner letras dentro
+                y placeholder="Escribe tu nombre" permite lo mismo
+                pero mas para campo de busqueda
+                size="10" tamaño de letra-->
+
+            <!--ejemplo:-->
+            <!--<input type="text" placeholder="Escribe tu nombre" size="10">-->
+
+
+            <!--tamaño de valores permitidos = maxlength="2"-->
+
+            <!--name es para identificar el input mediante el nombre = name="nombre-->
+
+            <!--id cuando se va a recibir un name="nombre" = id="nombre"-->
+
+            <!--en el label lo manda al id del input, estan relacionados,
+            sirve para cuando le pones un click en Ingrese su nombre pase el puntero
+            a la caja de texto = for="nombre" al id="nombre"-->  
+
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" placeholder="Escribe tu nombre" maxlength="30" name="nombre" id="nombre" class="">
+                <br/>
+                <br/>
+            
+                <!--haciendo lo mismo para contraseña-->
+            <label for="contrasena">Ingrese su contraseña:</label>
+            <input type="password" placeholder="Escribe su password" maxlength="30" name="contrasena" id="contrasena" class="">
+            <br/>
+            <br/>
+            
+            <!--haciendo lo mismo para email-->
+            <label for="mail">Ingrese su email:</label>
+            <input type="email" placeholder="Escribe su email" maxlength="30" name="mail" id="mail" class="">
+            <br/>
+            <br/>
+            <!--checkbox agrega una casilla cuadrada y seleccion multiple -->
+            <input type="checkbox" name="" id="" >Hombre
+
+            <input type="checkbox" name="" id="" >Mujer
+            <br/>
+            <br/>
+
+            <!--radio agrega una casilla para solo una opcion -->
+            <!--Explicado sin vincular-->
+            <input type="radio" name="" id="" >Hombre
+            <input type="radio" name="" id="" >Mujer
+            <br/>
+            <br/>
+
+            <!--Explicado y vinculado, se juntan con el name="gender" y tienen que llevar el mismo nombre-->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br/>
+            <br/>
+
+            <!--button para accion de lenguaje-->
+            <input type="button" value="enviar">
+            <br/>
+            <br/>
+
+            <!--submit envia los datos del form-->
+            <input type="submit" value="envia los datos">
+
+            <br/>
+            <br/>
+            <!--listas despegables-->
+            <select name="" id="">
+                <option value="Mexico">Mexico</option>
+                <option value="Colombia">Colombia</option>
+
+            </select>
+
+            <br/>
+            <br/>
+            <!--color-->
+            <input type="color" name="" id="">
+
+
+            <br/>
+            <br/>
+            <!--selecciona el rango-->
+            <input type="range" name="" id="">
+
+        </form>
+
+    </body>
+</html>

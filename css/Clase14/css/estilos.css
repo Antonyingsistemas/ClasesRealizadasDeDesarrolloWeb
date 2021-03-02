@@ -1,0 +1,79 @@
+/*Estructurando*/
+
+/*diseño desde cero*/
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    background:#e6e6e6;
+
+}
+header, .main, footer {
+
+    width:90%;
+    max-width:1000px;/*tamaño maximo*/
+    margin:20px auto;/*20px de arriba y abajo, centrar contenido*/
+
+}
+
+header nav {
+    background:#528fd5;
+    overflow:hidden;/*ocultar el contenido que sobrepase el contenedor,limpia los float:left*/
+}
+
+header nav ul {
+    list-style:none;/*quita los puntos*/
+
+}
+
+header nav ul li {
+    float:left;/*todos esten de derecha a izquierda*/
+
+}
+
+header nav ul li a {
+
+    padding:10px 20px;
+    display:block;
+    color:#fff;
+    text-decoration:none;/*quitar subrayado*/
+}
+
+header nav ul li a:hover {
+
+    background:#75ACEC;
+}
+
+.main .articles {
+    width:68.5%;
+    margin-right:1.5%;/*para dar una separacion*/
+    float:left;/*contenedor a la izquierda*/
+
+    
+}
+
+/*articulos*/
+.main .articles article{
+    padding:20px;
+    background:#fff;/*fondo blanco*/
+    margin-bottom:20px;/*margen de 20px*/
+}
+
+aside {
+    width:30%;
+    background:#ff8000;
+    float:left;/*contenedor a la izquierda*/
+    padding:20px;
+    box-sizing:border-box;/*ajusta el tamaño con los valores dados*/
+}
+
+footer{
+    background:#000;
+    color:#fff;
+    clear:both;/*limpiar los float:left*/
+    text-align:center;/*centrar*/
+
+}

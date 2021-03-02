@@ -1,0 +1,81 @@
+
+/*todo el contenido*/
+* {
+    
+    margin:0;
+    padding:0;
+
+    /*caja de tamaño con borde*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: url(bg.jpg) #fff;/*si no carga la imagen ponlo de color negro*/
+    background-size:cover;          /*para que la imagen se ajuste a la pantalla del usuario*/
+    color:#fff;
+    font-size: 16px;
+
+
+}
+
+/*.wrap para el div*/
+.wrap{
+    width: 90%;
+    max-width: 1000px;
+    /*margin:auto;*/                    /*centrar el reloj*/
+
+}
+
+/*.wrap para el div y los parrafos*/
+.widget {
+    width:40%;                      /*no abarque todo el ancho*/
+    margin: 32px;                     /*puedes usar 2em = 32px o directamente 32px*/
+    /*margin:32px;*/                 
+}
+
+/*parrafos*/
+.widget p{
+    display:inline-block;                      /*todos se vuelvan a floche*/
+    line-height: 1em;                         /*adaptado a 1em*/           
+}
+
+.fecha{
+    font-family: Oswald, Arial;          /*fuente de letra de google font*/
+    text-align:center;                   /*centrar*/
+    font-size:1.5em;                     /*tamaño de fecha*/
+    margin-bottom: 0.3125rem;           /*seria como 5px*/
+    background: rgba(0,0,0,.5);        /*fondo de color negro con la mitad de transferencia*/
+    padding: 20px;                       /*padding */
+
+    width:100%;                          /*tamaño*/
+          
+}
+
+.reloj{
+    font-family: Oswald, Arial;          /*fuente de letra de google font*/
+    text-align:center;                   /*centrar*/
+    font-size:4em;                     /*tamaño de fecha*/
+
+    background: rgba(0,0,0,.5);        /*fondo de color negro con la mitad de transferencia*/
+    padding: 20px;                       /*padding */
+
+    width:100%;                          /*tamaño*/
+          
+}
+
+/*DIV de am y pm*/
+.reloj .caja-segundos{
+    display: inline-block;          /*poner en linea el div*/
+   
+}
+
+/*para ampm y segundos*/
+.reloj .segundos,
+.reloj .ampm{
+    font-size:2rem;                /*tamaño*/
+    display: block;                 /*poner en block defecto*/
+   
+}

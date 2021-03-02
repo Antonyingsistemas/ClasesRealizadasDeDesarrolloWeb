@@ -1,0 +1,44 @@
+/*posicionamiento*/
+
+
+div{
+    width: 100px;
+    height:100px;
+    background:#4A88F4;
+    color:#fff;
+    font-size:30px;
+    float:left;/*flotante para posicionar una al lado del otro
+    left para poner en linea horizontal de izquierda a derecha del 1 al 10
+    right para poner en linea horizontal de derecha a izquierda del 1 al 10
+    */
+    
+
+}
+
+.caja{
+    position:absolute;/*relative = posicionar una caja y desplazarla despues
+    absolute = desplaza la caja pero se sale de la linea
+    fixed = es por coordenadas, pero el elemento no se mueve de la posicion
+    static = las propiedades de top, bottom, right ,left se invalidan
+    */
+    top:50px;           /*para desplazar de arriba a abajo*/
+    bottom:0px;        /**/
+    right:0px;         /**/
+    left:50px;          /*para desplazar de izquierda a derecha*/
+}
+
+.caja_padre {
+
+    width:200px;
+    height:200px;
+    background:#000;
+
+    position:relative; /*ahora se pondra la caja #2 dentro de la caja padre*/
+}
+
+/*para limpiar al float*/
+.clear {
+    clear:both;/*rompiendo la columna #10 */
+
+}
+

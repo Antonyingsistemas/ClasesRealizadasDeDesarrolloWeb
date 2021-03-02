@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fechas en Javascript</title>
+      
+    </head>
+    <body>
+
+        <script>
+
+        //funcion autoinvocada
+        (function(){
+            var fecha = new Date();//creando una nueva fecha, la actual del sistema
+            document.write(fecha);
+
+            console.log(fecha.getHours() - 12);//traemos las horas a la pantalla
+            console.log(fecha.getMinutes());//traemos los minutos a la pantalla
+            console.log(fecha.getSeconds());//traemos los segundos a la pantalla
+
+            //PARA DIAS , DIA DEL MES , MES y AÑO
+            console.log(fecha.getDay());//traemos los dias a la pantalla
+            console.log(fecha.getDate());//traemos los dias del mes a la pantalla
+            console.log(fecha.getMonth());//traemos el mes a la pantalla
+            console.log(fecha.getFullYear());//traemos el año la pantalla
+            
+
+            
+        }())
+        
+        </script>
+
+        <!--<script src="javascript/jasc.js" >
+        
+        
+        </script>-->
+        <!--recomendado poner el SCRIPT AL FINAL!!!-->
+    </body>
+</html>

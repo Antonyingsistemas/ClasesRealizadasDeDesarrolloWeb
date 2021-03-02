@@ -1,0 +1,78 @@
+/*referencia a todo el documento= body*/
+/*background queremos cambiar el fondo : valor a que valor hay que cambiar a la propiedad*/
+body {
+    background:#000000;     /*#000000 o poner black*/
+    color:#fff;             /*color de la fuente*/
+}
+
+
+
+
+/*selector universal permite cambiar todos los aspectos*/
+*{
+    margin:0;                /*agregar margen*/
+    padding:0;              /*agregar margen interno de los elementos*/
+}
+
+
+
+
+/*selector de etiqueta para h2*/
+h2{
+    color:red;/*color de la fuente*/
+    font-size:20px;/*tamaño de la fuente*/
+
+}
+
+
+/*selector de etiqueta para todos los h*/
+h1,h2,h3,h4,h5,h6{
+
+    color:red;/*color de la fuente*/
+}
+
+
+span{
+    color:yellow;
+}
+
+/*selector descendente para los elementos dentro*/
+p a {
+    font-size:40px;
+}
+
+a{
+    font-size:10px;
+}
+
+/*para todas las clases que tengan yellow*/
+.yellow {
+    color:green;
+
+}
+
+/*con id pero solo se agrega una vez, ya no se utilizan*/
+/*#yellow {
+    color:rgb(0, 128, 128);
+
+}*/
+
+/*combinando, buscame en los parrafos la clase green*/
+p .green {
+    color:rgb(14, 61, 14);
+
+}
+
+
+/*selectores con links*/
+a[href="https://www.google.com/"]
+{
+    color:yellowgreen;
+    font-size:20px;
+
+}
+
+
+
+
+

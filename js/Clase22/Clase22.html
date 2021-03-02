@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Validando Formularios :D</title>
+      
+    </head>
+    <body>
+
+        <form action="" name="formulario" method="get"><!--action="recibe.php" seria encargado de recibir los datos y subir a la BASE DE DATOS :D, get y post-->
+            
+            
+            <input type=text name="nombre" id="nombre" maxlength="30" placeholder="Nombre:" ><!--required es para las validaciones-->
+            
+            
+            <br>
+
+            <input type="radio" name="sexo" id="hombre" value="Hombre" >Hombre
+            <input type="radio" name="sexo" id="mujer" value="Mujer" >Mujer
+            
+            <br>
+
+            <input type="checkbox" name="terminos" id="terminos" >Terminos y Condiciones
+            
+            <br>
+
+            <input type="submit" name="btn" id="btn" value="Enviar"><!--submit envia loss datos-->
+            
+
+        </form>
+
+        <script>
+
+        //funcion autoinvocada
+        (function(){
+            
+            //COMPROBAR QUE EL CAMPO NO ESTE VACIO SINO RELLENADO
+            var formulario = document.getElementsByName('formulario')[0],//trae el formulario del primero
+                elementos = formulario.elements,
+                boton = document.getElementById('btn');
+
+            //VALIDAREMOS LOS NOMBRES
+            var validarNombre = function(e){
+                if(formulario.nombre.value == 0){       //accediendo al valor del nombre , si el valor es igual 0 entonces no escribio nada
+                    alert("Completa el campo nombre");
+                    e.preventDefault();                 //previene el envio de datos
+                }
+            };
+
+            //VALIDAREMOS RADIO BOTON
+            var validarRadio = function(e){
+              if(formulario.sexo[0].checked == true || formulario.sexo[1].checked == true){//comprobar SI se relleno el boton
+                    
+              }else
+              {
+                    alert("Completa el campo sexo");
+                    e.preventDefault();                 //previene el envio de datos
+              }
+            };
+
+            //VALIDAREMOS CHECKBOX
+            var validarCheckbox = function(e){
+              if(formulario.terminos.checked == false){
+                alert("Acepta los terminos de condiciones");
+                    e.preventDefault();                 //previene el envio de datos
+              }
+            };
+
+            //ACEPTAR LAS VALIDACIONES
+            var validar = function(e){
+                validarNombre(e);
+                validarRadio(e);
+                validarCheckbox(e);
+            };
+
+            //EVENTO DEL SUBMIT
+            formulario.addEventListener("submit",validar); //validar podria ejecutar todos pero recuerda que solo las funciones haga una cosa
+
+        }())
+        
+        </script>
+
+        <!--<script src="javascript/jasc.js" >
+        
+        
+        </script>-->
+        <!--recomendado poner el SCRIPT AL FINAL!!!-->
+    </body>
+</html>

@@ -1,0 +1,90 @@
+
+ /*Todo el contenido*/
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*el cuerpo de la pagina*/
+body {
+	background: #FAFAFA;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+
+ /*Formulario*/
+/*margenes*/
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+
+  /*parte externa*/
+.principal {
+	background: #F44336;
+	border-top: 20px solid #D32F2F;
+	color: #fff;
+	padding: 50px 0;
+	width: 100%;
+}
+   /*texto centrado*/
+.principal .formulario {
+	color: #212121;
+	text-align: center;
+}
+
+ /*input para agregar tareas*/
+.principal .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+ 
+ /*input para poner color rojo cuando halla un error*/
+.principal .formulario input[type=text].error {
+	border: 5px solid #D32F2F;
+	color: red;
+}
+
+  /*boton*/
+.principal .formulario .boton {
+	background: none;
+	border: 1px solid #D32F2F;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+
+  /*Al accionar el boton*/
+.principal .formulario .boton:hover {
+	border: 1px solid #fff;
+}
+ 
+/* - Tareas - */
+/*listas*/
+.tareas .lista {
+	list-style: none;
+}
+ 
+/*lista borde*/
+.tareas .lista li {
+	border-bottom: 1px solid #B6B6B6;
+}
+ 
+/*lista padding */
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+/*listas tachadas*/
+.tareas .lista li a:hover {
+	text-decoration: line-through;
+}

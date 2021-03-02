@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplos de funciones y formularios</title><!--Contenedor de un valor-->
+        
+    </head>
+    <body>
+        <!--formulario-->
+        <form action="">
+            <input type="text" id="numero1"> <!--Los id no utilices para diseñar sino para javascript-->
+            <input type="text" id="numero2">
+            <input type="button" value="Sumar" onclick="alert( suma(10,50) );"><!--ejecuta en pantalla-->
+        </form>
+        <script>
+
+            var suma = function (numero1,numero2){//numero1 no es igual al id de numero1 del input
+                var numero1 = parseFloat(document.getElementById("numero1").value);//trayendo elemento,  OBTENER EL ELEMENTE DEL ID, value del valor , parseInt pasa a int ( entero ), para decimales se usa Float (raro que no halla double :( )
+                var numero2 = parseFloat(document.getElementById("numero2").value);
+
+                var resultado = numero1 + numero2;
+                return resultado;
+            }
+
+
+        </script>   
+
+
+
+
+
+
+
+        <!--<script src="javascript/jasc.js" >
+        
+        
+        </script>-->
+        <!--recomendado poner el SCRIPT AL FINAL!!!-->
+    </body>
+</html>

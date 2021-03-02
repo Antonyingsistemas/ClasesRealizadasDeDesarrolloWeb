@@ -1,0 +1,24 @@
+/*imagenes*/
+
+img{
+    width:100px;/*primero hace caso la medida del css*/
+    height:auto;/*auto para que sea aumatico*/
+
+    /*centrar*/
+    margin:auto;
+    display:block;/*por que display:inline-size:; y no deja centrar*/
+    border-radius:50%;/*bordear la imagen*/
+    /*box-shadow:5px 5px 0px #000;*//*sombra 5px de izquierda a derecha, 5px de arriba a abajo, 0px tamaño y color*/
+
+    /*bordear o marco*/
+    padding:10px;
+    border:1px solid #000;
+
+
+}
+
+div{
+    background: #ccc;/*plomo*/
+    width: 100%;
+
+}

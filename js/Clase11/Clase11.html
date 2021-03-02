@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Scope de Javascript</title><!--Contenedor de un valor-->
+        
+    </head>
+    <body>
+
+        <script>
+            //el scope determina la accesibilidad de las variables
+            //como globales, locales, protegidas ,etc
+            //GLOBAL - varibales que se pueden usar en todo el codigo (con var y sin var son globales)
+            
+            //var variableGlobal = "Esta es Global";
+
+            /*
+            var miFuncion = function(){
+                alert(variableGlobal);
+
+                variableGlobal = "Este es Global pero modificado";
+                alert(variableGlobal);
+            }
+
+            miFuncion();*/
+
+            //------------------------------------------
+
+            //LOCAL - variables que solo se usaran dentro de la funcion(con var pero dentro de la funcion)
+
+            //var miFuncion = function(){
+                //var variableLocal = "Esta es Local";
+           //     alert(variableLocal);
+
+            //    var FuncionLocal = function(){
+                    //var variableLocal = "Esta es variable local, dentro de funcionLocal";
+                    
+                    //alert(variableLocal);//busca las variables dentro de las funciones, mejor dicho por niveles
+                    //ojo puedes ver FUNCIONES DE DENTRO A FUERA NO DE FUERA A ADENTRO
+            //    }
+                //funciones locales
+            //    FuncionLocal();
+            //}
+
+            //miFuncion();
+            //alert(variableLocal);//no se muestra el mensaje por que el alert esta fuera de la funcionlocal
+
+            //---------------------------------
+
+            //FUNCION AUTOINVOCADA
+            (function (){
+
+            //todo el CODIGO DENTRO SERA PROTEGIDO
+            var variableGlobal = "Esta es Global";
+
+            var miFuncion = function(){
+            //var variableLocal = "Esta es Local";
+            alert(variableLocal);
+
+            var FuncionLocal = function(){
+                var variableLocal = "Esta es variable local, dentro de funcionLocal";
+                    
+                    //alert(variableLocal);//busca las variables dentro de las funciones, mejor dicho por niveles
+                    //ojo puedes ver FUNCIONES DE DENTRO A FUERA NO DE FUERA A ADENTRO
+            }
+
+            FuncionLocal();
+            }
+
+            miFuncion();
+            //alert(variableLocal);//no se muestra el mensaje por que el alert esta fuera de la funcionlocal
+
+            }())
+
+
+
+        </script>  
+
+
+
+        <!--<script src="javascript/jasc.js" >
+        
+        
+        </script>-->
+        <!--recomendado poner el SCRIPT AL FINAL!!!-->
+    </body>
+</html>
