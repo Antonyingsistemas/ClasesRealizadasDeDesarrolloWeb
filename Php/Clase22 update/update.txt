@@ -1,0 +1,4 @@
+CAMBIANDO DATOS
+UPDATE invitados SET nombre = 'Pedro' WHERE nombre = 'Juan'
+
+UPDATE invitados SET nombre = 'Julia' WHERE nombre = 'Tania' AND apellido = 'Lopez'

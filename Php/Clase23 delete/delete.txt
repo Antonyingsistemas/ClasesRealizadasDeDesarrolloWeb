@@ -1,0 +1,8 @@
+borra todos los datos de la tabla
+DELETE FROM invitados
+
+borra todos los datos de la tabla con el trigger o disparadores
+TRUNCATE TABLE invitados
+
+elimina TODA LA TABLA CON SU ESTRUCTURA
+DROP TABLE invitados

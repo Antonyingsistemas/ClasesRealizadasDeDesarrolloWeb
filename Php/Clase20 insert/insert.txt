@@ -1,0 +1,2 @@
+INSERT INTO invitados (nombre, apellido, fecha) VALUES ('Juan', 'Perez', '2020-12-12')
+

@@ -1,0 +1,24 @@
+SELECCIONANDO
+SELECT nombre FROM invitados
+
+SELECT nombre,apellido FROM invitados
+
+SELECT * FROM invitados
+
+
+
+CON WHERE
+SELECT nombre FROM invitados WHERE nombre = 'Antony'
+
+SELECT * FROM invitados WHERE nombre = 'Antony'
+
+Se me ocurrio buscar donde quiero dos valores en vez de uno
+SELECT * FROM invitados WHERE nombre = 'Antony' AND apellido="Rosales"
+
+
+
+
+ORDENANDO
+SELECT * FROM invitados ORDER BY nombre
+
+

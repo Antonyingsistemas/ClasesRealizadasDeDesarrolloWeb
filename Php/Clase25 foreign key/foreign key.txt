@@ -1,0 +1,13 @@
+para hacer claves foraneas
+
+CREATE TABLE registros(
+	id INT NOT NULL PRIMARY KEY,
+    usuario_id INT NOT NULL,
+    evento_id INT NOT NULL,
+    
+    FOREIGN KEY fk_usuario_id(usuario_id)
+    REFERENCES usuarios(id),
+    
+    FOREIGN KEY fk_evento_id(evento_id)
+    REFERENCES evento(evento)
+);

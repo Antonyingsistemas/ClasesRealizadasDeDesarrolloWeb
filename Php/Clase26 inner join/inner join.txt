@@ -1,0 +1,13 @@
+
+Junta los datos y cumple los registros con usuario por medio del id
+SELECT * FROM registros
+INNER JOIN usuarios
+ON registros.usuario_id = usuarios.id;
+
+(FILTRA LOS DATOS QUE QUIERES MOSTRAR)
+Muestra los campos de id nombre(usuario y evento) relacionados a las tablas usuarios y evento con su id
+SELECT registros.id, usuarios.nombre, evento.nombre FROM registros
+INNER JOIN usuarios
+ON registros.usuario_id = usuarios.id
+INNER JOIN evento
+ON registros.evento_id = evento.evento;
